@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo span{
+    color: red;
+}
+
+.links{
+    display: flex;
+    column-gap: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #4e4e59;
+}
+
+#Dropdown{
+    border: none;
+}
+
+.buttonnav button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ce1212;
+    color: white;
+}
