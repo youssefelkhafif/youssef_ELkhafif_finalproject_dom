@@ -1,22 +1,19 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+/* body {
     width: 100vw;
-}
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
 
 
 
-
-
-
-
-
-
-.navbar{
+.navbar {
     width: 100%;
     height: 100px;
     background-color: #ffffff;
@@ -25,28 +22,111 @@ body{
     justify-content: space-evenly;
 }
 
-.logo span{
+.logo span {
     color: red;
 }
 
-.links{
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.links {
     display: flex;
     column-gap: 20px;
 }
 
-.links a{
+.links a {
     text-decoration: none;
     color: #4e4e59;
 }
 
-#Dropdown{
+#Dropdown {
     border: none;
 }
 
-.buttonnav button{
+.buttonnav button,
+.section-one-left-btn .btn1 {
     padding: 10px 20px;
     border-radius: 15px;
     border: none;
     background-color: #ce1212;
     color: white;
+    cursor: pointer;
 }
+
+.buttonnav button:hover,
+.section-one-left-btn .btn1:hover {
+    background-color: #ce1212b9;
+}
+
+.section-one-left-btn .btn2 {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+}
+
+.section-one-left-btn .btn2:hover {
+    color: #ce1212;
+}
+
+.section-one-left-btn .btn2 i {
+    color: #ce1212;
+}
+
+.section-one-left h1 {
+    font-family: "Amatic SC", sans-serif;
+    width: 200px;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+.section-one-left  p{
+    width: 300px;
+}
+
+
+/* first section  */
+
+.section-one {
+    height: 85vh;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-one-right {
+    /* width: 50%; */
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-one-right img {
+    max-width: 70%;
+    height: 70%;
+    background-size: contain;
+}
+
+
+.section-one-right {
+    width: 50%;
+    height: 100%;
+}
+
+.section-one-left{
+    flex-direction: column;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    row-gap: 20px;
+}
+
