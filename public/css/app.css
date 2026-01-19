@@ -663,7 +663,8 @@
 }
 
 .top-section-five,
-.top-section-seven {
+.top-section-seven , 
+.top-section-eight {
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -673,18 +674,21 @@
 }
 
 .top-section-five h3,
-.top-section-seven h3 {
+.top-section-seven h3 ,
+.top-section-eight h3 {
     font-family: "Amatic SC", sans-serif;
     font-size: 30px;
 }
 
 .top-section-five h3 span,
-.top-section-seven h3 span {
+.top-section-seven h3 span,
+.top-section-eight h3 span {
     color: #d61212;
 }
 
 .section-five,
-.section-seven {
+.section-seven,
+.section-eight {
     flex-direction: column;
     display: flex;
 
@@ -777,4 +781,79 @@
     fill: white;
     stroke: black;
     stroke-width: 2;
+}
+
+
+/* footer section */
+
+.footer-section{
+    background-color: #1f1f24;
+    flex-direction: column;
+    display: flex;
+    row-gap: 30px;
+    padding: 30px 30px;
+    
+}
+
+.top-footer-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-top-section{
+    display: flex;
+    column-gap: 10px;
+    color: white;
+    
+}
+
+.top-top-section a i{
+    color: #ce1212;
+}
+
+.top-top-section .text{
+    flex-direction: column;
+    display: flex;
+    row-gap: 20px;
+}
+
+.paragragh{
+    width: 150px;
+}
+
+.control p{
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.control span{
+    color: white;
+}
+
+
+.medel-footer-section{
+    width: 80vw;
+    height: 1px;
+    background-color: #36363a;
+    margin-inline: 100px;
+}
+
+.buttom-footer-section{
+    display: flex;
+    justify-content: center;
+}
+
+.buttom-footer-section div{
+    color: rgba(255, 255, 255, 0.842);
+    flex-direction: column;
+    display: flex;
+    row-gap: 5px;
+    text-align: center;
+}
+
+.buttom-footer-section div h3 span{
+    color: white;
+}
+
+.buttom-footer-section div p span{
+    color: #ce1212;
 }
