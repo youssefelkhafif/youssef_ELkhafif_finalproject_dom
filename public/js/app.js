@@ -12,7 +12,7 @@ allcarousel.forEach(e => {
       let btn = e.querySelector('[data-slide="next"]')
       btn.click()
     }, time);
-    
+
   }
 
 
@@ -25,7 +25,7 @@ allcarousel.forEach(e => {
 
   let index = 0
 
-  
+
 
 
   // lets make function for update the img
@@ -36,7 +36,7 @@ allcarousel.forEach(e => {
 
     items[index].classList.add('ban')
     dots[index].classList.add('active')
-    
+
   }
 
 
@@ -63,8 +63,8 @@ allcarousel.forEach(e => {
       items[index].classList.add('ban');
     })
   })
-    
-    dots.forEach((dot, i) => {
+
+  dots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
       index = i
       console.log(index);
@@ -73,6 +73,32 @@ allcarousel.forEach(e => {
   })
 
 })
+
+
+// modals 
+
+let mybutton = document.querySelectorAll(".modalbtn");
+let mydiv = document.querySelectorAll(".modaldiv");
+
+
+mybutton.forEach((element) => {
+  element.addEventListener("click", () => {
+    let value = element.getAttribute("data-bs-target");
+    console.log(value);
+    mydiv.forEach((m) => {
+      if (m.id == value) {
+        m.style.display = "block";
+
+      }
+      let close = m.querySelector(".close");
+
+      close.addEventListener('click', () => {
+        m.style.display = 'none'
+      })
+    });
+  });
+});
+
 
 
 

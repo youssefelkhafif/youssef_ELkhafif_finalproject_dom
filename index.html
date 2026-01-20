@@ -59,8 +59,10 @@
             <p>We are team of talented designers making websites with Bootstrap</p>
             <div class="section-one-left-btn">
                 <button class="btn1">Booka a Table</button>
-                <button class="btn2"><i class="fa-solid fa-circle-play"></i>Watch Video</button>
+                <button class="btn2 modalbtn" data-bs-target='modal1'><i class="fa-solid fa-circle-play"></i>Watch
+                    Video</button>
             </div>
+
         </div>
         <div class="section-one-right">
             <img src="./public/img/menu/menu-item-1.png" alt="">
@@ -112,11 +114,25 @@
                 </div>
                 <div class="img-and-video">
                     <img src="./public/img/about-2.jpg" alt="">
-                    <button><i class="fa-solid fa-play"></i></button>
+                    <div>
+                        <button class="modalbtn" data-bs-target='modal2'><i class="fa-solid fa-play"></i></button>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </section>
+
+    <!-- modals -->
+    <div class="modaldiv" id="modal1">
+        <h1>modal1</h1>
+        <button class="close">x</button>
+    </div>
+    <div class="modaldiv" id="modal2">
+        <h1>modal2</h1>
+        <button class="close">x</button>
+    </div>
 
     <!-- about section second -->
     <section class="Three-section">
@@ -617,7 +633,7 @@
                     <p><span>Mon-Sat:</span> 11AM - 23PM; <span>Sunday:</span> Closed</p>
                 </div>
             </div>
-            
+
         </div>
         <div class="box-messag-section-Nine">
             <div class="first-input-section-Nine">
