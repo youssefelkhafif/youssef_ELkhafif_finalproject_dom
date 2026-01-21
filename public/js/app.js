@@ -158,6 +158,31 @@ setInterval(() => {
 
 
 
+// medie
+
+let links = document.querySelector('.links')
+
+let openbtn = document.querySelector('.opens')
+let closebtn = document.querySelector('.closee')
+
+openbtn.addEventListener('click', () =>{
+    links.classList.add('active')
+
+    openbtn.style.display = 'none'
+    closebtn.style.display = 'block'
+
+})
+
+closebtn.addEventListener('click' , ()=>{
+  links.classList.remove('active')
+
+
+  closebtn.style.display = 'none'
+  openbtn.style.display = 'block'
+})
+
+
+
 
 
 

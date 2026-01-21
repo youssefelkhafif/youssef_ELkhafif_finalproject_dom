@@ -11,6 +11,9 @@
     box-sizing: border-box;
 } */
 
+.btnn{
+    display: none;
+}
 
 
 .navbar {
@@ -1263,4 +1266,47 @@ body.no-scroll {
   filter: blur(0);
 }
 
+
+
+@media (max-width:445px) {
+    .btnn {
+        display: block;
+    }
+
+    .closee{
+        display: none;
+    }
+
+    .section-one , .section-tue ,  .Three-section , .section-Four , .section-five , .carousel , .section-seven ,
+     .section-6 , .section-eight,.section-Nine ,.footer-section {
+
+        display: none;
+    }
+
+    
+
+    .btnn button{
+        padding: 10px 10px;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .links{
+        flex-direction: column;
+        display: flex;
+        row-gap: 30px;
+        padding: 10px 20px;
+        width: 400px;
+        height: 50vh;
+        background-color: #ce1212;
+        position: absolute;
+        top: 80px;
+        transform: translate(-1000px);
+    }
+
+    .links.active{
+        transform: translate(0);
+    }
+    
+}
 
