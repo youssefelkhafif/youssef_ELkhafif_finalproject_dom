@@ -100,6 +100,70 @@ mybutton.forEach((element) => {
 });
 
 
+// carousel of 3 img 
+
+const track = document.querySelector('.track')
+const nextbtn = document.querySelector('.next' )
+
+const next = document.querySelector('.nexts')
+const trac = document.querySelector('.stylimg')
+let moving = false
+let mov = false
+
+
+// carousel one 
+nextbtn.addEventListener('click', () => {
+  if (mov) return
+  mov = true
+
+  track.style.transform = 'translateX(-450px)';
+
+  track.addEventListener('transitionend', () => {
+    track.appendChild(track.firstElementChild);
+    track.style.transition = 'none';
+    track.style.transform ='translateX(0)';
+    track.offsetHeight;
+    track.style.transition = 'transform 0.5s ease';
+    mov = false
+
+  }, { once: true });
+});
+
+setInterval(() => {
+  nextbtn.click();
+}, 3000)
+
+// carousel two
+
+next.addEventListener('click', () => {
+  if (moving) return
+  moving = true
+
+  trac.style.transform = 'translateX(-450px)';
+
+  trac.addEventListener('transitionend', () => {
+    trac.appendChild(trac.firstElementChild);
+    trac.style.transition = 'none';
+    trac.style.transform ='translateX(0)';
+    trac.offsetHeight;
+    trac.style.transition = 'transform 0.5s ease';
+    moving = false
+
+  }, { once: true });
+});
+
+setInterval(() => {
+  next.click();
+}, 3000)
+
+
+
+
+
+
+
+
+
 
 
 
