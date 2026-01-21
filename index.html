@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <title>Document</title>
     <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 
 <body>
 
     <!-- One Two Three Four Five Six Seven Eight Nine Ten -->
     <!-- first nav bar -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
     <nav class="navbar">
         <div class="logo">
             <a href="">
@@ -47,8 +48,8 @@
             <a href="">Contact</a>
         </div>
         <div class="buttonnav">
-            <button>Book a Table</button>
-            
+            <button class="btn2 modalbtn" data-bs-target='modal3'>Book a Table</button>
+
         </div>
         <div class="btnn">
             <button class="opens"><i class="mobile-nav-toggle d-xl-none bi bi-list"></i></button>
@@ -63,7 +64,7 @@
                 Delicious Food</h1>
             <p>We are team of talented designers making websites with Bootstrap</p>
             <div class="section-one-left-btn">
-                <button class="btn1">Booka a Table</button>
+                <button class="btn1 modalbtn" data-bs-target='modal3'>Booka a Table</button>
                 <button class="btn2 modalbtn" data-bs-target='modal1'><i class="fa-solid fa-circle-play"></i>Watch
                     Video</button>
             </div>
@@ -144,6 +145,36 @@
         <div class="box-video">
             <div class="video">
                 <iframe src="https://www.youtube.com/embed/Y7f98aduVJ8"></iframe>
+            </div>
+        </div>
+        <button class="close">x</button>
+    </div>
+    <div class="modaldiv div2" id="modal3">
+        <h1>modal2</h1>
+        <div class="box-video ">
+            <div class=" box-input   video">
+                <div class="boock-table">
+                    <input type="text" placeholder="Your Name">
+                    <form action="">
+                        <label for="meal"></label>
+                        <select class="inputa" id="Drop" required>
+                            <option value="">Select a meal</option>
+                            <option value="Magnam Tiste">Magnam Tiste - $5.95</option>
+                            <option value="Aut Luia">Aut Luia - $14.95</option>
+                            <option value="Est Eligendi">Est Eligendi - $8.95</option>
+                            <option value="Eos Luibusdam">Eos Luibusdam - $12.95</option>
+                            <option value="Laboriosam Direva">Laboriosam Direva - $9.95</option>
+                        </select>
+                    </form>
+                    <input type="date">
+                    <input id="star" type="time">
+                    <input id="end" type="time">
+                    <input type="number" placeholder="Your Phone">
+                </div>
+                <div class="bt">
+                    <button id="boocking">book table</button>
+                </div>
+
             </div>
         </div>
         <button class="close">x</button>

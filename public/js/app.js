@@ -182,13 +182,54 @@ closebtn.addEventListener('click' , ()=>{
 })
 
 
+// now lets make logic of boock table
 
 
+let boocking = document.querySelector('#boocking')
 
+let booking = []  //hna fin kitkhaba booking
 
+boocking.addEventListener('click' , () =>{
+  const name = document.querySelector('.boock-table input[type="text"]').value.trim()
+  const meal = document.querySelector("#Drop").value
+  const date = document.querySelector('.boock-table input[type="date"]').value
+  const start = document.querySelector('#star').value
+  const end = document.querySelector('#end').value
+  const phone = document.querySelector('.boock-table input[type="number"]').value.trim()
 
+  // nchofo wach user bsa7a 3amar input
+  if (!name || !meal || !date || !start || !end || !phone ) {
+    alert('Please 3amar info dyalk')
+    return
+  }
 
+  // db nchofo lwa9 wach howa hadak
 
+  if (start >= end) {
+    alert('end time khaso ikon mn ba3d star time')
+    return;
+  }
 
+  // hna konchofo wach tabla khawya wla 3amra 
 
+  const conflict = booking.some(b=>
+    b.date === date &&
+    (
+      (start >= b.start && start < b.end) ||
+      (end > b.start && end <= b.end ) ||
+      (start <= b.start && end >= b.end )
+    )
+  )
 
+  if (conflict) {
+    alert('mosam7a tabla 3amra fi had lwa9t')
+    return
+  }else{
+    alert('good')
+  }
+
+  // dakchi li 3amro user nkhabiwh fi booking
+
+  booking.push({name , meal , date , start , end , phone})
+
+})
